@@ -1,0 +1,6 @@
+discarding /home/hpc3230/Software/anaconda2/envs/tvb/bin from PATH
+prepending /home/hpc3230/Software/anaconda2/envs/tvb/bin to PATH
+/home/hpc3230/Software/anaconda2/envs/tvb/lib/python2.7/site-packages/pandas/computation/__init__.py:19: UserWarning: The installed version of numexpr 2.4.4 is not supported in pandas and will be not be used
+
+  UserWarning)
+RuntimeError: module compiled against API version 0xa but this version of numpy is 0x9

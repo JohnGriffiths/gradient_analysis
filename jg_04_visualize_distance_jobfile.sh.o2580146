@@ -1,0 +1,55 @@
+
+MNE software location set to:    /home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64
+MATLAB software not available
+
+/home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64/bin already in PATH
+/home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64/lib added to LD_LIBRARY_PATH
+/home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64/share/app-defaults/%N added to XUSERFILESEARCHPATH
+
+Note: Remember to set SUBJECTS_DIR and SUBJECT environment variables correctly.
+Note: FreeSurfer environment is needed to access tkmedit from mne_analyze.
+
+70
+10
+75
+8
+80
+6
+85
+10
+90
+9
+95
+12
+medial frontal		 2.361335
+dorsomedial frontal		 6.952844
+dorsolateral frontal		 7.467428
+ventrolateral frontal		 1.337740
+lateral temporal		 5.977212
+inferior parietal		 6.997158
+posteromedial		 5.766131
+medial temporal		 5.111823
+in[8]
+in[9]
+in[10]
+83.7555288127
+0.0
+80.8957523937
+0.0
+[267]
+[347]
+0
+1
+2
+3
+4
+5
+6
+0
+1
+2
+3
+4
+5
+6
+46.8107743764

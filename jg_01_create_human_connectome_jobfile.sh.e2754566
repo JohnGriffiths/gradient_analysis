@@ -1,0 +1,5 @@
+discarding /home/hpc3230/Software/anaconda2/bin from PATH
+prepending /home/hpc3230/Software/anaconda2/envs/tvb/bin to PATH
+/home/hpc3230/Software/anaconda2/envs/tvb/lib/python2.7/site-packages/nibabel/cifti2/parse_cifti2.py:24: FutureWarning: We no longer carry a copy of the 'six' package in nibabel; Please import the 'six' package directly
+  from ..externals.six import BytesIO
+/opt/n1ge6/default/spool/cac013/job_scripts/2754566: line 15: 76140 Killed                  python jg_01_create_human_connectome.py

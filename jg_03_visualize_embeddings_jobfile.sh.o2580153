@@ -1,0 +1,21 @@
+
+MNE software location set to:    /home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64
+MATLAB software not available
+
+/home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64/bin already in PATH
+/home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64/lib added to LD_LIBRARY_PATH
+/home/hpc3230/Software/MNE/MNE-2.7.4-3514-Linux-x86_64/share/app-defaults/%N added to XUSERFILESEARCHPATH
+
+Note: Remember to set SUBJECTS_DIR and SUBJECT environment variables correctly.
+Note: FreeSurfer environment is needed to access tkmedit from mne_analyze.
+
+59412
+31870
+91282
+1  -4.45734  6.46696
+2  -2.45044  2.70135
+3  -1.46795  3.27761
+4  -1.2931  1.80333
+5  -1.24661  1.28611
+1.14777518875
+-1.84654885002

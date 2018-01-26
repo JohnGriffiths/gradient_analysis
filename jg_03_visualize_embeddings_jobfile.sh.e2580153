@@ -1,0 +1,13 @@
+discarding /home/hpc3230/Software/anaconda2/envs/tvb/bin from PATH
+prepending /home/hpc3230/Software/anaconda2/envs/tvb/bin to PATH
+/home/hpc3230/Software/anaconda2/envs/tvb/lib/python2.7/site-packages/nibabel/cifti2/parse_cifti2.py:24: FutureWarning: We no longer carry a copy of the 'six' package in nibabel; Please import the 'six' package directly
+  from ..externals.six import BytesIO
+/home/hpc3230/Software/anaconda2/envs/tvb/lib/python2.7/site-packages/pandas/computation/__init__.py:19: UserWarning: The installed version of numexpr 2.4.4 is not supported in pandas and will be not be used
+
+  UserWarning)
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
+pixdim[1,2,3] should be non-zero; setting 0 dims to 1
