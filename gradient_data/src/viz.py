@@ -30,7 +30,7 @@ def plot_surf_stat_map(coords, faces, stat_map=None,
 
     # if cmap is given as string, translate to matplotlib cmap
     if type(cmap) == str:
-        cmap = plt.cm.get_cmap(cmap)
+      cmap = plt.cm.get_cmap(cmap)
 
     # initiate figure and 3d axes
     if figsize is not None:
@@ -167,40 +167,67 @@ def _get_plot_stat_map_params(stat_map_data, vmax, symmetric_cbar, kwargs,
         cbar_vmin, cbar_vmax = None, None
     return cbar_vmin, cbar_vmax, vmin, vmax
 
-def showSurf(input_data, surf, sulc, cort, showall=None, output_file=None):    
+# JG_MOD
+#def showSurf(input_data, surf, sulc, cort, showall=None, output_file=None):    
+def showSurf(input_data, surf, sulc, cort, showall=None, output_file=None,symmetric_cbar='auto',cmap='jet',
+             bg_scaling_factor=1.):    
 
     import matplotlib.pyplot as plt
     
-    f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=0)
-    plt.show()
-
+    #f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=0)
+    f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=0,symmetric_cbar=symmetric_cbar,cmap=cmap,darkness=bg_scaling_factor) # JG_MOD
+    #plt.show() # JG_MOD
+    
     if output_file:
         count = 0
         f.savefig((output_file + '.%s.png') % str(count))
         count += 1
-    f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=180)
-    plt.show()
+
+    plt.close() # JG_ADD
+
+    #f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=180)
+    f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=180,symmetric_cbar=symmetric_cbar,cmap=cmap,darkness=bg_scaling_factor) # JG_MOD
+    #plt.show()  #JG_MOD
     if output_file:
         f.savefig((output_file + '.%s.png') % str(count))
         count += 1
+
+    plt.close() # JG_MOD
+
     if showall:
-        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=90)
-        plt.show()
+        #f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=90)
+        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=90,symmetric_cbar=symmetric_cbar,cmap=cmap,darkness=bg_scaling_factor) # JG_MOD
+        #plt.show() # JG_MOD
         if output_file:
             f.savefig((output_file + '.%s.png') % str(count))
             count += 1
-        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=270)
-        plt.show()
+
+        plt.close() # JG_MOD
+
+        #f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=270)
+        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, azim=270,symmetric_cbar=symmetric_cbar,cmap=cmap,darkness=bg_scaling_factor) # JG_MOD
+        # plt.show() # JG_MOD
         if output_file:
             f.savefig((output_file + '.%s.png') % str(count))
             count += 1
-        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, elev=90)
-        plt.show()
+        
+        plt.close() # JG_MOD
+
+        #f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, elev=90)
+        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, elev=90,symmetric_cbar=symmetric_cbar,cmap=cmap,darkness=bg_scaling_factor) # JG_MOD
+        # plt.show() # JG_MOD
         if output_file:
             f.savefig((output_file + '.%s.png') % str(count))
             count += 1
-        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, elev=270)
-        plt.show()
+
+        plt.close() # JG_MOD
+
+        #f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, elev=270) 
+        f = plot_surf_stat_map(surf[0], surf[1], bg_map=sulc, mask=cort, stat_map=input_data, bg_on_stat=True, elev=270,symmetric_cbar=symmetric_cbar,cmap=cmap,darkness=bg_scaling_factor) # JG_MOD
+        # plt.show() # JG_MOD
         if output_file:
             f.savefig((output_file + '.%s.png') % str(count))
             count += 1
+
+        plt.close() # JG_MOD
+
